@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper."
+title: "DRL Mobile Charging Stations for Stochastic EV Demand"
+authors:
+  - family-names: "Golsefidi"
+    given-names: "Atefeh Hemmati"
+preferred-citation:
+  type: article
+  title: "Using Mobile Charging Stations as Probes to Discover Latent EV Charging Demand in Stochastic Environments: A Deep Reinforcement Learning Approach"
+  authors:
+    - family-names: "Golsefidi"
+      given-names: "Atefeh Hemmati"
+    - family-names: "Boe"
+      given-names: "Frederik"
+    - family-names: "Samaranayake"
+      given-names: "Samitha"
+    - family-names: "Pereira"
+      given-names: "Francisco Câmara"
+  journal: "Expert Systems with Applications"
+  year: 2026
+  pages: "131433"
+  publisher: "Elsevier"
