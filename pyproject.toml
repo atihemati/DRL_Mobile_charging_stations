@@ -1,0 +1,66 @@
+[project]
+name = "drl-mobile-charging"
+version = "1.0.0"
+description = "Deep reinforcement learning for dispatching mobile charging stations as probes for latent EV charging demand — reference code for Hemmati Golsefidi et al. (2026), Expert Systems with Applications."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Atefeh Hemmati Golsefidi" },
+    { name = "Frederik Boe Hüttel" },
+    { name = "Samitha Samaranayake" },
+    { name = "Francisco Câmara Pereira" },
+]
+keywords = [
+    "deep reinforcement learning",
+    "mobile charging stations",
+    "electric vehicles",
+    "facility location",
+    "actor-critic",
+    "stochastic optimization",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    # Pinned <2.0 because Toy_Env.py contains an assignment pattern that
+    # NumPy 2.x rejects ("setting an array element with a sequence"). Lift this
+    # cap once that line is updated.
+    "numpy>=1.24,<2.0",
+    "matplotlib>=3.7",
+    "torch>=2.0",
+    "imageio>=2.30",
+    "Pillow>=10.0",
+    "psutil>=5.9",
+    # Gurobi optimizer Python interface. Requires a separate license — a free
+    # academic license is fine for reproducing the paper.
+    "gurobipy>=11.0",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+]
+
+[project.urls]
+Paper = "https://doi.org/10.1016/j.eswa.2026.131433"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# This repository is a script-based research codebase, not an importable package.
+# Telling setuptools `py-modules = []` keeps `pip install .` working as a way to
+# install the dependencies above, without trying to auto-discover and package up
+# the top-level scripts (run.py, Toy_Env.py, etc.).
+[tool.setuptools]
+py-modules = []
