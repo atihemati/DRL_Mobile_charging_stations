@@ -13,7 +13,7 @@ Everything you need to run the experiment is in **[`test.ipynb`](test.ipynb)** â
 
 The notebook runs two scenarios that differ only in the coverage radius `Dis`:
 
-### Non-intersecting supply coverage (`Dis = 40`)
+### Non-intersecting supply coverage (`Dis = 30`)
 
 The coverage radius is small, so MCSs and fixed stations cover disjoint regions. Each high-demand location is served only when an MCS is physically present there, and the agent has to learn to *be in the right place at the right time* across the day/night cycle.
 
