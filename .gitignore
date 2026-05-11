@@ -1,5 +1,6 @@
-outputs/
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 *.pyc
+outputs/toy_rl/generated_data/
+*.pkl
