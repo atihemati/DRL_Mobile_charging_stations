@@ -27,6 +27,14 @@ The coverage radius is large enough that a single MCS at an intermediate locatio
 
 ---
 
+## Output files
+
+Some experiment output files are included in the repository to support
+reproducibility of `test.ipynb`.
+
+Very large generated scenario files (`.pkl`) are excluded from GitHub because they exceed GitHub file-size limits. These files can be
+regenerated automatically by running the notebook.
+
 ## Citation
 
 If you use this code, please cite the paper:
