@@ -19,11 +19,19 @@ The coverage radius is small, so MCSs and fixed stations cover disjoint regions.
 
 ![Non-intersecting scenario](animation/animation_RL/non_intersecting/animation_RL_1.gif)
 
+The following plot compares the DRL reward with the OPT-AD perfect-foresight optimization benchmark for the non-intersecting scenario.
+
+![Scenario A — Non-intersecting coverage reward](outputs/plots/scenario_A_non_intersecting_drl_vs_opt.png)
+
 ### Intersecting supply coverage (`Dis = 100`)
 
 The coverage radius is large enough that a single MCS at an intermediate location can serve several demand clusters at once. The agent learns to occupy a few well-chosen hubs instead of chasing every demand peak, and overall rewards are higher than in the non-intersecting case.
 
 ![Intersecting scenario](animation/animation_RL/intersecting/animation_RL_1.gif)
+
+The following plot compares the DRL reward with the OPT-AD perfect-foresight optimization benchmark for the intersecting scenario.
+
+![Scenario B — Intersecting coverage reward](outputs/plots/scenario_B_intersecting_drl_vs_opt.png)
 
 ---
 ## Output files
