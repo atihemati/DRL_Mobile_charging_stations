@@ -26,16 +26,21 @@ The coverage radius is large enough that a single MCS at an intermediate locatio
 ![Intersecting scenario](animation/animation_RL/intersecting/animation_RL_1.gif)
 
 ---
-
 ## Output files
 
 Some experiment output files are included in the repository to support
 reproducibility of `test.ipynb`.
 
-Very large generated scenario files (`.pkl`) are excluded from GitHub because they exceed GitHub file-size limits. These files can be
-regenerated automatically by running the notebook.
+Very large generated scenario files and some large output history files are not
+uploaded to GitHub because they exceed GitHub's file-size limit. These include:
 
+```text
+outputs/toy_rl/generated_data/
+outputs/toy_rl/demand_history_*.npy
+outputs/toy_rl/mobile_history_*.npy
+outputs/toy_rl/supply_history_*.npy
 
+These files can be regenerated automatically by running the notebook.
 ---
 
 ## Citation
