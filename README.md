@@ -1,6 +1,6 @@
 # Using mobile charging stations as probes to discover latent EV charging demand in stochastic environments: A deep reinforcement learning approach
 
-This repository will contain the implementation of a **deep reinforcement learning agent** and a **rolling-horizon optimization baseline** for dispatching mobile charging stations (MCSs) to serve stochastic EV charging demand. The agent is an Advantage Actor-Critic with an LSTM encoder; the baseline is a MILP that gets to see future demand perfectly, and serves as an idealized upper bound.
+This repository contains the implementation of a **deep reinforcement learning agent** and a **rolling-horizon optimization baseline** for dispatching mobile charging stations (MCSs) to serve stochastic EV charging demand. The agent is an Advantage Actor-Critic with an LSTM encoder; the baseline is an MILP that gets to see future demand perfectly and serves as an idealized upper bound.
 
 It reproduces the toy experiment from:
 
