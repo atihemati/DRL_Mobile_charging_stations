@@ -39,10 +39,9 @@ outputs/toy_rl/generated_data/
 outputs/toy_rl/demand_history_*.npy
 outputs/toy_rl/mobile_history_*.npy
 outputs/toy_rl/supply_history_*.npy
-
 ```
-
 These files can be regenerated automatically by running the notebook.
+
 ---
 
 ## Citation
